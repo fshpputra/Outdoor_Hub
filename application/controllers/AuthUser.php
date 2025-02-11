@@ -19,7 +19,7 @@ class AuthUser extends CI_Controller {
 
         if ($this->form_validation->run() == false) {
             $data['title'] = 'login page';
-            $this->load->view('User/login/index', $data);
+            $this->load->view('User/login/login', $data);
         } else {
             // validasinya success
             $this->_login();

@@ -28,7 +28,7 @@ class Signup extends CI_Controller {
 
         if ($this->form_validation->run() == false) {
             $data['title'] = 'Signup';
-            $this->load->view('User/signup/index', $data);
+            $this->load->view('User/signup/signup', $data);
         } else {
             // validasinya success
 			$insert = $this->M_signup->register();
