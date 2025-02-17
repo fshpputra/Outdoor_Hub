@@ -21,7 +21,7 @@
                 <li class="breadcrumb-item active" aria-current="page"><a href="#">Add</a></li>
             </ol>
         </div>
-        <form class="card" method="post" action="<?= base_url('Root/Produk/kategori_add')?>">
+        <form class="card" method="post" action="<?= base_url('Root/Produk/kategori_add')?>" enctype="multipart/form-data">
             <div class="card-header">
                 <h3 class="card-title">Add</h3>
             </div>
@@ -43,7 +43,7 @@
                 </div>
             </div>
             <div class="card-footer text-end">
-                <button type="submit" class="btn btn-primary">Tambah</button>
+                <button type="submit" class="btn btn-primary" id="b-submit" onclick="submitButton()">Tambah</button>
             </div>
         </form>
     </div>
@@ -53,3 +53,13 @@
     document.getElementById("nav-produk").className += " active";
 </script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script>
+    $("#file-upload").change(function() {
+        $("#file-name").text(this.files[0].name);
+    });
+</script>
+<script>
+    function submitButton() {
+        document.getElementById("b-submit").className += " disabled";
+    }
+</script>

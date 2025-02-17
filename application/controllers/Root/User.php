@@ -37,7 +37,7 @@ class User extends CI_Controller {
     {
         $user = $this->_sessionUsr();
         if ($this->_access([1])) {
-            $data['title']          = 'Dashboard';
+            $data['title']          = 'User';
             $data['users']          = $user;
             $data['list']           = $this->M_root->user_get();
             $data['view_name']      = 'Root/user/index';

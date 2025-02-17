@@ -5,12 +5,11 @@ class Auth_model extends CI_Model
 {
 
     private $_table_ROOT   = "root";
-    private $_table_ADMIN  = "pelanggan";
+    private $_table_USER  = "pelanggan";
 
     const SESSION_KEYROOT  	= 'idRoot';
-    const SESSION_KEYEMPLY 	= 'idUser';
+    const SESSION_KEYUSER 	= 'idPelanggan';
 
-    const SESSION_LANG = 'lang';
 
 
     public function rules()
@@ -30,28 +29,47 @@ class Auth_model extends CI_Model
     }
 
 	//===============================USERS===============================
-    public function createSession($id, $lang)
-    {
 
-        $this->session->set_userdata([self::SESSION_KEYEMPLY => $id, self::SESSION_LANG => $lang]);
-        $this->session->has_userdata([self::SESSION_KEYEMPLY, self::SESSION_LANG]);
+    public function loginUser($email, $password)
+    {
+        $this->db->where('email', $email);
+        $query = $this->db->get($this->_table_USER);
+        $user = $query->row();
+
+
+        // cek apakah user sudah terdaftar?
+        if (!$user) {
+            return 0;
+        }
+
+        // cek apakah passwordnya benar?
+        if ($password != $user->password) {
+            return 1;
+        }
+
+        // bikin session
+        $this->session->set_userdata([self::SESSION_KEYUSER => $user->idPelanggan]);
+        $this->session->has_userdata(self::SESSION_KEYUSER);
+
+        return 3;
     }
 
-    public function current_admin()
+    public function current_user()
     {
-        if (!$this->session->has_userdata(self::SESSION_KEYEMPLY) ||  !$this->session->has_userdata(self::SESSION_LANG)) {
+        if (!$this->session->has_userdata(self::SESSION_KEYUSER)) {
             return null;
         }
 
-        $user_id = $this->session->userdata(self::SESSION_KEYEMPLY);
-        $query = $this->db->get_where($this->_table_ADMIN, ['id_user' => $user_id, 'status_user' => 1]);
+        $user_id = $this->session->userdata(self::SESSION_KEYUSER);
+        $query = $this->db->get_where($this->_table_USER, ['idPelanggan' => $user_id]);
         return $query->row();
     }
 
-    public function logoutAdmin()
+
+    public function logoutUser()
     {
-        $this->session->unset_userdata([self::SESSION_KEYEMPLY, self::SESSION_LANG]);
-        return !$this->session->has_userdata([self::SESSION_KEYEMPLY, self::SESSION_LANG]);
+        $this->session->unset_userdata([self::SESSION_KEYUSER]);
+        return !$this->session->has_userdata([self::SESSION_KEYUSER]);
     }
 
 

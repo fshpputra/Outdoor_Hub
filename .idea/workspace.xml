@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f2df0d02-dd0c-47c5-aaff-9d2dacbf4c2e" name="Changes" comment="view login and regis user">
+      <change afterPath="$PROJECT_DIR$/application/controllers/Home.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/models/M_user.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/Root/produk/kategori/edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/Root/produk/list/add.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/Root/produk/list/edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/Root/produk/list/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/User/about.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/User/chekout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/User/detail_gear.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/User/gear.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/User/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/User/keranjang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/User/kontak.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/User/templates/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/dist/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/AuthUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/AuthUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Root/Produk.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Root/Produk.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Root/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Root/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/Auth_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Auth_model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/M_root.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/M_root.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/M_signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/M_signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/Root/produk/kategori/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/Root/produk/kategori/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/Root/produk/kategori/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/Root/produk/kategori/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/Root/templates/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/Root/templates/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/Root/user/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/Root/user/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/User/login/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/User/login/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/User/signup/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/User/signup/signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/dist/js/myscript.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/dist/js/myscript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/user/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/user/js/script.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerConfigs">
+    <option name="configs">
+      <option value="$PROJECT_DIR$/assets/dist/libs/tinymce/composer.json" />
+    </option>
+  </component>
+  <component name="ComposerSettings" synchronizationState="DONT_SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;fshpputra&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/fshpputra/Outdoor_Hub.git&quot;,
+    &quot;accountId&quot;: &quot;46ec092c-7063-4a00-8eec-64f0e0e5c423&quot;
+  }
+}</component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\xampp\php\php.exe">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/mikey179/vfsstream" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/type" />
+    </include_path>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2sD1r7GMtP6GjYjD8ujBbWcO5Xx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/vis&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Outdoor_Hub\application\views\Root\produk\kategori" />
+      <recent name="C:\xampp\htdocs\Outdoor_Hub\application\views\User\login" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-PS-242.20224.427" />
+        <option value="bundled-php-predefined-a98d8de5180a-d6acee4cb394-com.jetbrains.php.sharedIndexes-PS-242.20224.427" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f2df0d02-dd0c-47c5-aaff-9d2dacbf4c2e" name="Changes" comment="" />
+      <created>1737975526745</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1737975526745</updated>
+      <workItem from="1737975527767" duration="1389000" />
+      <workItem from="1738047625508" duration="228000" />
+      <workItem from="1738047928105" duration="14244000" />
+      <workItem from="1738596880425" duration="6482000" />
+      <workItem from="1738729536619" duration="8637000" />
+      <workItem from="1739205941731" duration="16423000" />
+      <workItem from="1739266727705" duration="783000" />
+      <workItem from="1739282636955" duration="1084000" />
+      <workItem from="1739285043514" duration="605000" />
+      <workItem from="1739305028807" duration="648000" />
+      <workItem from="1739341841879" duration="28000" />
+      <workItem from="1739448212883" duration="84983000" />
+    </task>
+    <task id="LOCAL-00001" summary="view login and regis user">
+      <option name="closed" value="true" />
+      <created>1739283385659</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1739283385659</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="view login and regis user" />
+    <option name="LAST_COMMIT_MESSAGE" value="view login and regis user" />
+  </component>
+</project>

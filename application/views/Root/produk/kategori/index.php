@@ -3,7 +3,7 @@
         <div class="row g-2 align-items-center">
             <div class="col">
                 <h2 class="page-title">
-                    Reseller
+                    Category Produk
                 </h2>
             </div>
         </div>
@@ -44,11 +44,11 @@
                         <tbody class="table-tbody">
                         <?php foreach($category as $row):?>
                             <tr>
-                                <td class="sort-name"><?= $row->nama_category;?></td>
-                                <td align="center">
+                                <td class="sort-name"><?= $row->nama_kategori;?></td>
+                                <td>
                                     <div class="btn-group">
                                         <a class="btn btn-icon btn-teal w-100"
-                                           href="<?= base_url('Root/Documentation/updateHeader/') . encrypt_url($key->id_doc_header); ?>">
+                                           href="<?= base_url('Root/Produk/kategori_edit/') . encrypt_url($row->idKategori); ?>">
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                                  class="icon icon-tabler icon-tabler-pencil-minus"
                                                  width="24" height="24" viewBox="0 0 24 24"
@@ -63,8 +63,8 @@
                                                 <path d="M16 18h4"></path>
                                             </svg>
                                         </a>
-                                        <a class="btn btn-icon btn-red w-100 tombol-cancel"
-                                           href="<?= base_url('Root/Documentation/deleteHeader/') . encrypt_url($key->id_doc_header); ?>">
+                                        <a class="btn btn-icon btn-red w-100 tombol-delete"
+                                           href="<?= base_url('Root/Produk/kategori_delete/') . encrypt_url($row->idKategori); ?>">
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                                  class="icon icon-tabler icon-tabler-trash" width="24"
                                                  height="24" viewBox="0 0 24 24" stroke-width="2"
@@ -102,3 +102,4 @@
         $('#datatables').DataTable();
     });
 </script>
+

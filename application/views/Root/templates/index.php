@@ -200,7 +200,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="<?= base_url('Root/Token/tokenBonus')?>" id="nav-listProduk">
+                                        <a class="dropdown-item" href="<?= base_url('Root/Produk/list')?>" id="nav-listProduk">
                                             List Produk
                                         </a>
                                     </li>
@@ -299,6 +299,7 @@
 
     <!-- Myscript -->
     <script src="<?= base_url(); ?>assets/dist/js/myscript.js"></script>
+    <script src="<?= base_url('assets/')?>dist/js/script.js"></script>
     <script>
     $(document).ajaxStart(function() {
         loading(true)

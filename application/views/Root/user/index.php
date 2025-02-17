@@ -24,12 +24,10 @@
                     <table class="table" id="datatables">
                         <thead>
                         <tr>
-                            <th><button class="table-sort" data-sort="sort-name">Create</button></th>
                             <th><button class="table-sort" data-sort="sort-name">Nama</button></th>
                             <th><button class="table-sort" data-sort="sort-name">Email</button></th>
                             <th><button class="table-sort" data-sort="sort-name">Password</button></th>
                             <th><button class="table-sort" data-sort="sort-name">No Handphone</button></th>
-                            <th><button class="table-sort" data-sort="sort-name">Alamat</button></th>
                         </tr>
                         </thead>
                         <tbody class="table-tbody">
