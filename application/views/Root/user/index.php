@@ -52,36 +52,6 @@
     </div>
 </div>
 
-<div class="modal modal-blur fade" id="modal_log" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Log Subscribe</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="table-responsive">
-                    <table class="table table-sm">
-                        <thead>
-                        <tr>
-                            <th><button class="table-sort" data-sort="sort-name">Actived</button></th>
-                            <th><button class="table-sort" data-sort="sort-name">Token</button></th>
-                            <th><button class="table-sort" data-sort="sort-name">Reseller</button></th>
-                            <th><button class="table-sort" data-sort="sort-name">Subscribe</button></th>
-                            <th><button class="table-sort" data-sort="sort-name">Expired</button></th>
-                        </tr>
-                        </thead>
-                        <tbody class="table-tbody" id="draw_log">
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn me-auto" data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
 
 <script>
     document.getElementById("nav-users").className += " active";

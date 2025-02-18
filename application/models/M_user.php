@@ -73,6 +73,7 @@ class M_user extends CI_Model
 
         $data_pesanan = [
             'idPelanggan' => $idPelanggan,
+            'invoice' => "INV-" . time(),
             'total_harga' => $total_harga,
             'tanggal' => date('Y-m-d'),
             'status' => 'Pending'
@@ -101,14 +102,76 @@ class M_user extends CI_Model
     public function pesanan_get($id=NULL, $array=NULL){
         $this->db->select('*');
         $this->db->from('pesanan');
+        $this->db->join('pelanggan', 'pelanggan.idPelanggan = pesanan.idPelanggan');
         if($id != NULL){
             $this->db->where('idPesanan', $id);
+        }
+        $this->db->order_by('idPesanan', 'DESC');
+        $this->db->limit(1);
+        if($array != NULL){
+            return $this->db->get()->row();
+        }else{
+            return $this->db->get()->result();
+        }
+    }
+
+    public function insertPengiriman($data)
+    {
+        $this->db->insert('pengiriman', $data);
+        return $this->db->insert_id();
+    }
+
+    public function insertPembayaran($data)
+    {
+        $this->db->insert('pembayaran', $data);
+        return $this->db->insert_id();
+    }
+
+    public function pelanggan_get($idcustomer=NULL, $array=NULL)
+    {
+        $this->db->select('*');
+        $this->db->from('pelanggan');
+        if($idcustomer != NULL){
+            $this->db->where('idPelanggan', $idcustomer);
         }
         if($array != NULL){
             return $this->db->get()->row();
         }else{
             return $this->db->get()->result();
         }
+    }
+
+    public function pesananDetail_get($id,$invoice=NULL, $array=NULL, $produk=NULL){
+        $this->db->select('g.namaProduk, s.jumlah, b.total_harga, b.tanggal, b.status, b.invoice');
+        $this->db->from('orderitem s');
+        $this->db->join('produk g', 's.idProduk=g.idProduk');
+        $this->db->join('pesanan b', 's.idPesanan= b.idPesanan');
+        $this->db->join('pelanggan c', 'b.idPelanggan= c.idPelanggan');
+        $this->db->where('b.idPelanggan', $id);
+
+        if($invoice != NULL){
+            $this->db->where('s.idPesanan', $invoice);
+        }
+        if($produk != NULL){
+            $this->db->where('s.idProduk', $produk);
+        }
+        if($array != NULL){
+            return $this->db->get()->row();
+        }else{
+            return $this->db->get()->result();
+        }
+
+    }
+
+    public function get_dashboard_counts() {
+        $query = $this->db->query("
+            SELECT 
+                (SELECT COUNT(*) FROM kategori) AS total_category,
+                (SELECT COUNT(*) FROM produk) AS total_produk,
+                (SELECT COUNT(*) FROM ulasan) AS total_review,
+                (SELECT COUNT(*) FROM pesanan) AS total_pesanan
+        ");
+        return $query->row();
     }
 
 }

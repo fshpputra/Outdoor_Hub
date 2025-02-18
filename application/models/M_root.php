@@ -352,6 +352,81 @@ class M_root extends CI_Model
             return $this->db->delete('produk');
         }
     }
+
+    public function pesanan_get($id=NULL,$idcustomer=NULL, $array=NULL)
+    {
+        $this->db->select('*');
+        $this->db->from('pesanan p');
+        $this->db->join('pelanggan b', 'b.idPelanggan = p.idPelanggan');
+        if($id != NULL){
+            $this->db->where('p.idPesanan', $id);
+        }
+        if($idcustomer != NULL){
+            $this->db->where('p.idPelanggan', $idcustomer);
+        }
+        if($array != NULL){
+            return $this->db->get()->row();
+        }else{
+            return $this->db->get()->result();
+        }
+    }
+
+    public function pembayaran_get($id=NULL,$idcustomer=NULL, $array=NULL)
+    {
+        $this->db->select('b.*,p.*,c.*,p.status as statusPembayaran');
+        $this->db->from('pembayaran p');
+        $this->db->join('pesanan b', 'b.idPesanan= p.idPesanan');
+        $this->db->join('pelanggan c', 'b.idPelanggan = c.idPelanggan');
+        if($id != NULL){
+            $this->db->where('p.idPesanan', $id);
+        }
+        if($idcustomer != NULL){
+            $this->db->where('p.idPembayaran', $idcustomer);
+        }
+        if($array != NULL){
+            return $this->db->get()->row();
+        }else{
+            return $this->db->get()->result();
+        }
+    }
+
+    public function pengiriman_get($id=NULL,$idcustomer=NULL, $array=NULL)
+    {
+        $this->db->select('b.*,p.*,c.*,p.status as statusPengiriman,p.tanggal as tanggalPengiriman');
+        $this->db->from('pengiriman p');
+        $this->db->join('pesanan b', 'b.idPesanan= p.idPesanan');
+        $this->db->join('pelanggan c', 'b.idPelanggan = c.idPelanggan');
+        if($id != NULL){
+            $this->db->where('p.idPesanan', $id);
+        }
+        if($idcustomer != NULL){
+            $this->db->where('p.idPengiriman', $idcustomer);
+        }
+        if($array != NULL){
+            return $this->db->get()->row();
+        }else{
+            return $this->db->get()->result();
+        }
+    }
+
+    public function pesananDetail_get($invoice=NULL, $array=NULL, $produk=NULL){
+        $this->db->select('s.*,g.*,b.*');
+        $this->db->from('orderitem s');
+        $this->db->join('produk g', 's.idProduk=g.idProduk');
+        $this->db->join('pesanan b', 's.idPesanan= b.idPesanan');
+
+        if($invoice != NULL){
+            $this->db->where('s.idPesanan', $invoice);
+        }
+        if($produk != NULL){
+            $this->db->where('s.idProduk', $produk);
+        }
+        if($array != NULL){
+            return $this->db->get()->row();
+        }else{
+            return $this->db->get()->result();
+        }
+    }
 }
 
 

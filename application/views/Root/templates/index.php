@@ -208,7 +208,7 @@
                             </li>
 
                             <li class="nav-item" id="nav-pesanan">
-                                <a class="nav-link" href="<?= base_url('Pesanan') ?>">
+                                <a class="nav-link" href="<?= base_url('Root/Pesanan') ?>" id="nav-pesanan">
                             <span class="nav-link-icon d-md-none d-lg-inline-block">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart"
                                      width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
@@ -226,7 +226,7 @@
 
 
                             <li class="nav-item" id="nav-pembayaran">
-                                <a class="nav-link" href="<?= base_url('Pembayaran') ?>">
+                                <a class="nav-link" href="<?= base_url('Root/Pembayaran') ?>" id="nav-pembayaran">
                             <span class="nav-link-icon d-md-none d-lg-inline-block">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-credit-card"
                                      width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
@@ -243,7 +243,7 @@
                             </li>
 
                             <li class="nav-item" id="nav-pengiriman">
-                                <a class="nav-link" href="<?= base_url('Pengiriman') ?>">
+                                <a class="nav-link" href="<?= base_url('Root/Pengiriman') ?>" id="nav-pengiriman">
                             <span class="nav-link-icon d-md-none d-lg-inline-block">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-truck"
                                      width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"

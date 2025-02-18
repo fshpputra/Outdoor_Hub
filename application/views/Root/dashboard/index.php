@@ -89,7 +89,7 @@
                     <tr>
                         <th>Month</th>
                         <th>Total Pesanan</th>
-                        <th>Re activation</th>
+                        <th>Total Pembayaran</th>
                     </tr>
                 </thead>
                 <tbody>

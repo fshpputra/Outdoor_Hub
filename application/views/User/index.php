@@ -129,7 +129,7 @@
             <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
                 <div class="block-18">
                     <div class="text text-border d-flex align-items-center">
-                        <strong class="number" data-number="50">0</strong>
+                        <strong class="number" data-number="<?= $counts->total_category; ?>">0</strong>
                         <span>Total <br>Category Gear</span>
                     </div>
                 </div>
@@ -137,7 +137,7 @@
             <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
                 <div class="block-18">
                     <div class="text text-border d-flex align-items-center">
-                        <strong class="number" data-number="1090">0</strong>
+                        <strong class="number" data-number="<?= $counts->total_produk; ?>">0</strong>
                         <span>Total <br>Gear</span>
                     </div>
                 </div>
@@ -145,7 +145,7 @@
             <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
                 <div class="block-18">
                     <div class="text text-border d-flex align-items-center">
-                        <strong class="number" data-number="2590">0</strong>
+                        <strong class="number" data-number="<?= $counts->total_review; ?>">0</strong>
                         <span>Happy <br>Customers</span>
                     </div>
                 </div>
@@ -153,7 +153,7 @@
             <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
                 <div class="block-18">
                     <div class="text d-flex align-items-center">
-                        <strong class="number" data-number="67">0</strong>
+                        <strong class="number" data-number="<?= $counts->total_pesanan; ?>">0</strong>
                         <span>Total <br>Rent Outdoor Gear</span>
                     </div>
                 </div>

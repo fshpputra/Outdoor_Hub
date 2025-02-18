@@ -16,6 +16,10 @@ class ComposerStaticInit82f45071e91d5675561dbf6ffa155319
         array (
             'PhpParser\\' => 10,
         ),
+        'M' => 
+        array (
+            'Midtrans\\' => 9,
+        ),
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
@@ -27,6 +31,10 @@ class ComposerStaticInit82f45071e91d5675561dbf6ffa155319
         'PhpParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
+        ),
+        'Midtrans\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/midtrans/midtrans-php/Midtrans',
         ),
         'Doctrine\\Instantiator\\' => 
         array (

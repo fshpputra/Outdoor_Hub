@@ -4,38 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2df0d02-dd0c-47c5-aaff-9d2dacbf4c2e" name="Changes" comment="view login and regis user">
-      <change afterPath="$PROJECT_DIR$/application/controllers/Home.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/models/M_user.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/Root/produk/kategori/edit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/Root/produk/list/add.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/Root/produk/list/edit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/Root/produk/list/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/User/about.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/User/chekout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/User/detail_gear.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/User/gear.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/User/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/User/keranjang.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/User/kontak.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/User/templates/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/dist/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/AuthUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/AuthUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Root/Produk.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Root/Produk.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Root/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Root/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Signup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/Auth_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Auth_model.php" afterDir="false" />
+    <list default="true" id="f2df0d02-dd0c-47c5-aaff-9d2dacbf4c2e" name="Changes" comment="done pesanan">
+      <change afterPath="$PROJECT_DIR$/application/config/midtrans.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/controllers/Root/Pembayaran.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/controllers/Root/Pengiriman.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/controllers/Root/Pesanan.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/Root/pembayaran/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/Root/pengiriman/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/Root/pesanan/detail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/Root/pesanan/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/User/account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/models/M_root.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/M_root.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/M_signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/M_signup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/Root/produk/kategori/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/Root/produk/kategori/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/Root/produk/kategori/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/Root/produk/kategori/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/M_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/M_user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/Root/dashboard/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/Root/dashboard/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/Root/templates/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/Root/templates/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/Root/user/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/Root/user/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/User/login/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/User/login/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/User/signup/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/User/signup/signup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/dist/js/myscript.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/dist/js/myscript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/user/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/user/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/User/chekout.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/User/chekout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/User/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/User/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/platform_check.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/platform_check.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +101,7 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
       <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
       <path value="$PROJECT_DIR$/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/vendor/midtrans/midtrans-php" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -163,7 +160,7 @@
       <workItem from="1739285043514" duration="605000" />
       <workItem from="1739305028807" duration="648000" />
       <workItem from="1739341841879" duration="28000" />
-      <workItem from="1739448212883" duration="84983000" />
+      <workItem from="1739448212883" duration="106041000" />
     </task>
     <task id="LOCAL-00001" summary="view login and regis user">
       <option name="closed" value="true" />
@@ -173,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739283385659</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="done pesanan">
+      <option name="closed" value="true" />
+      <created>1739819694038</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1739819694038</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +186,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="view login and regis user" />
-    <option name="LAST_COMMIT_MESSAGE" value="view login and regis user" />
+    <MESSAGE value="done pesanan" />
+    <option name="LAST_COMMIT_MESSAGE" value="done pesanan" />
   </component>
 </project>
